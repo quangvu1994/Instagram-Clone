@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B5E89061EFCD7DA00D3DF77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */; };
+		5BA579101EFC42CE00A5E10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5790F1EFC42CE00A5E10C /* Main.storyboard */; };
+		5BA579141EFC430B00A5E10C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA579131EFC430B00A5E10C /* ViewController.swift */; };
+		5BA5791E1EFC48FB00A5E10C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5791D1EFC48FB00A5E10C /* Login.storyboard */; };
+		5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */; };
+		5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB552501EFC358800E9285E /* AppDelegate.swift */; };
+		5BB552581EFC358800E9285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB552571EFC358800E9285E /* Assets.xcassets */; };
+		5BF5FFD71F02D432005315D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFD61F02D432005315D1 /* User.swift */; };
+		E456CD31A410591D66634CF1 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting /GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B5E89071EFCD7E300D3DF77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting /Info.plist"; sourceTree = "<group>"; };
+		5BA5790F1EFC42CE00A5E10C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
+		5BA579131EFC430B00A5E10C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		5BA5791D1EFC48FB00A5E10C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
+		5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
+		5BB5524D1EFC358800E9285E /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB552501EFC358800E9285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5BB552571EFC358800E9285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BF5FFD61F02D432005315D1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		8466788FF28113EB76448496 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BB5524A1EFC358800E9285E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E456CD31A410591D66634CF1 /* Pods_Makestagram.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B5E89041EFCD7C200D3DF77 /* Supporting */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E89071EFCD7E300D3DF77 /* Info.plist */,
+				5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */,
+			);
+			name = Supporting;
+			sourceTree = "<group>";
+		};
+		5BA5791B1EFC459300A5E10C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5BA5790F1EFC42CE00A5E10C /* Main.storyboard */,
+				5BA5791D1EFC48FB00A5E10C /* Login.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		5BA5791C1EFC45B800A5E10C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BA579131EFC430B00A5E10C /* ViewController.swift */,
+				5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		5BB552441EFC358800E9285E = {
+			isa = PBXGroup;
+			children = (
+				5BB5524F1EFC358800E9285E /* Makestagram */,
+				5BB5524E1EFC358800E9285E /* Products */,
+				F30A6EE5DD4B638F91841050 /* Pods */,
+				75AD57DF04FEB3DE1D0357B9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5BB5524E1EFC358800E9285E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BB5524D1EFC358800E9285E /* Makestagram.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BB5524F1EFC358800E9285E /* Makestagram */ = {
+			isa = PBXGroup;
+			children = (
+				5BB552571EFC358800E9285E /* Assets.xcassets */,
+				5BB552501EFC358800E9285E /* AppDelegate.swift */,
+				5BF5FFD51F02D41D005315D1 /* Model */,
+				5BA5791C1EFC45B800A5E10C /* View Controllers */,
+				5B5E89041EFCD7C200D3DF77 /* Supporting */,
+				5BA5791B1EFC459300A5E10C /* Storyboards */,
+			);
+			path = Makestagram;
+			sourceTree = "<group>";
+		};
+		5BF5FFD51F02D41D005315D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5FFD61F02D432005315D1 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		75AD57DF04FEB3DE1D0357B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F30A6EE5DD4B638F91841050 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8466788FF28113EB76448496 /* Pods-Makestagram.debug.xcconfig */,
+				38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BB5524C1EFC358800E9285E /* Makestagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB5525F1EFC358800E9285E /* Build configuration list for PBXNativeTarget "Makestagram" */;
+			buildPhases = (
+				3AAC5C0173C6AAE21078EE23 /* [CP] Check Pods Manifest.lock */,
+				5BB552491EFC358800E9285E /* Sources */,
+				5BB5524A1EFC358800E9285E /* Frameworks */,
+				5BB5524B1EFC358800E9285E /* Resources */,
+				0AF9775B1847B647285AFB0C /* [CP] Embed Pods Frameworks */,
+				BBBEBAB5EA62A65E2C65CAF6 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Makestagram;
+			productName = Makestagram;
+			productReference = 5BB5524D1EFC358800E9285E /* Makestagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BB552451EFC358800E9285E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Quang Vu";
+				TargetAttributes = {
+					5BB5524C1EFC358800E9285E = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 5BB552481EFC358800E9285E /* Build configuration list for PBXProject "Makestagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BB552441EFC358800E9285E;
+			productRefGroup = 5BB5524E1EFC358800E9285E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BB5524C1EFC358800E9285E /* Makestagram */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BB5524B1EFC358800E9285E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BA579101EFC42CE00A5E10C /* Main.storyboard in Resources */,
+				5B5E89061EFCD7DA00D3DF77 /* GoogleService-Info.plist in Resources */,
+				5BA5791E1EFC48FB00A5E10C /* Login.storyboard in Resources */,
+				5BB552581EFC358800E9285E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF9775B1847B647285AFB0C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3AAC5C0173C6AAE21078EE23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BBBEBAB5EA62A65E2C65CAF6 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BB552491EFC358800E9285E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF5FFD71F02D432005315D1 /* User.swift in Sources */,
+				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
+				5BA579141EFC430B00A5E10C /* ViewController.swift in Sources */,
+				5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5BB5525D1EFC358800E9285E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BB5525E1EFC358800E9285E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BB552601EFC358800E9285E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8466788FF28113EB76448496 /* Pods-Makestagram.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting /Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangvu.Makestagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		5BB552611EFC358800E9285E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting /Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quangvu.Makestagram;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BB552481EFC358800E9285E /* Build configuration list for PBXProject "Makestagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB5525D1EFC358800E9285E /* Debug */,
+				5BB5525E1EFC358800E9285E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB5525F1EFC358800E9285E /* Build configuration list for PBXNativeTarget "Makestagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB552601EFC358800E9285E /* Debug */,
+				5BB552611EFC358800E9285E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BB552451EFC358800E9285E /* Project object */;
+}
