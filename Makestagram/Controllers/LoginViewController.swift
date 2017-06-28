@@ -51,24 +51,35 @@ extension LoginViewController: FUIAuthDelegate {
             return
         }
         
-        // Safely unwrap our authenticated user
-        guard let user = user
-            else { return }
+        // Safely unwrap user -> make sure that user has logged in
+        guard let user = user else {
+            return
+        }
         
-        // Grab our root reference in the Firebase Database
-        let rootRef = Database.database().reference()
-        // Find our User tree -> find our user using the uid
-        let userRef = rootRef.child("User").child(user.uid)
-        
-        // Gather data using observeSingleEvent method
-        // ?? When is the snapshot is being sent ??
-        userRef.observeSingleEvent(of: .value, with: { (snapshot) in 
-            if let data = snapshot.value as? [String: Any] {
-                print(data.debugDescription)
-            }else {
-                print("not exist")
+        // Read the data for that user
+        UserService.show(forUID: user.uid) { (user) in
+            // User found -> set current user and show the main storyboard
+            if let user = user {
+                // Set our current user which will be retained for the rest of the app lifecycle
+                User.setCurrent(user)
+                
+                // Grab our main storyboard
+                let storyboard = UIStoryboard(name: "Main", bundle: .main)
+                
+                // Instantiate our initial view controller from the storyboard
+                if let initialViewController = storyboard.instantiateInitialViewController() {
+                    // Make it the rootViewController
+                    self.view.window?.rootViewController = initialViewController
+                    self.view.window?.makeKeyAndVisible()
+                }
+                
+            } else {
+                // No account found -> perform our createUsername segue to move to the
+                // create new user view
+                self.performSegue(withIdentifier: Constants.Segue.toCreateUsername, sender: self)
             }
-        })
+            
+        }
     }
 }
 

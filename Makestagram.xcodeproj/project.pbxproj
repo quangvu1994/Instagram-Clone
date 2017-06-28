@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5B5E89061EFCD7DA00D3DF77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */; };
+		5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D0BA51F04145A0098EA6A /* Constant.swift */; };
+		5B80195D1F0414A400DCD552 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */; };
 		5BA579101EFC42CE00A5E10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5790F1EFC42CE00A5E10C /* Main.storyboard */; };
-		5BA579141EFC430B00A5E10C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA579131EFC430B00A5E10C /* ViewController.swift */; };
 		5BA5791E1EFC48FB00A5E10C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5791D1EFC48FB00A5E10C /* Login.storyboard */; };
 		5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */; };
 		5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB552501EFC358800E9285E /* AppDelegate.swift */; };
 		5BB552581EFC358800E9285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB552571EFC358800E9285E /* Assets.xcassets */; };
 		5BF5FFD71F02D432005315D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFD61F02D432005315D1 /* User.swift */; };
+		5BF5FFDB1F02F582005315D1 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */; };
+		5BF5FFDE1F030429005315D1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFDD1F030429005315D1 /* UserService.swift */; };
 		E456CD31A410591D66634CF1 /* Pods_Makestagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,14 +26,17 @@
 		38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
 		5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting /GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B5E89071EFCD7E300D3DF77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting /Info.plist"; sourceTree = "<group>"; };
+		5B7D0BA51F04145A0098EA6A /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = "Supporting /Constant.swift"; sourceTree = "<group>"; };
+		5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		5BA5790F1EFC42CE00A5E10C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
-		5BA579131EFC430B00A5E10C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
 		5BA5791D1EFC48FB00A5E10C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
 		5BB5524D1EFC358800E9285E /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB552501EFC358800E9285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB552571EFC358800E9285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BF5FFD61F02D432005315D1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
+		5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
+		5BF5FFDD1F030429005315D1 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
 		8466788FF28113EB76448496 /* Pods-Makestagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,10 +55,19 @@
 		5B5E89041EFCD7C200D3DF77 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
+				5B7D0BA51F04145A0098EA6A /* Constant.swift */,
 				5B5E89071EFCD7E300D3DF77 /* Info.plist */,
 				5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */,
 			);
 			name = Supporting;
+			sourceTree = "<group>";
+		};
+		5B7D0BA71F0414630098EA6A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 		5BA5791B1EFC459300A5E10C /* Storyboards */ = {
@@ -67,8 +82,8 @@
 		5BA5791C1EFC45B800A5E10C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5BA579131EFC430B00A5E10C /* ViewController.swift */,
 				5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */,
+				5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -96,9 +111,11 @@
 			children = (
 				5BB552571EFC358800E9285E /* Assets.xcassets */,
 				5BB552501EFC358800E9285E /* AppDelegate.swift */,
+				5BF5FFDC1F0303FB005315D1 /* Service */,
 				5BF5FFD51F02D41D005315D1 /* Model */,
 				5BA5791C1EFC45B800A5E10C /* View Controllers */,
 				5B5E89041EFCD7C200D3DF77 /* Supporting */,
+				5B7D0BA71F0414630098EA6A /* Extensions */,
 				5BA5791B1EFC459300A5E10C /* Storyboards */,
 			);
 			path = Makestagram;
@@ -110,6 +127,14 @@
 				5BF5FFD61F02D432005315D1 /* User.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		5BF5FFDC1F0303FB005315D1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5BF5FFDD1F030429005315D1 /* UserService.swift */,
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 		75AD57DF04FEB3DE1D0357B9 /* Frameworks */ = {
@@ -253,9 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */,
 				5BF5FFD71F02D432005315D1 /* User.swift in Sources */,
 				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
-				5BA579141EFC430B00A5E10C /* ViewController.swift in Sources */,
+				5B80195D1F0414A400DCD552 /* Storyboard+Utility.swift in Sources */,
+				5BF5FFDE1F030429005315D1 /* UserService.swift in Sources */,
+				5BF5FFDB1F02F582005315D1 /* CreateUsernameViewController.swift in Sources */,
 				5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

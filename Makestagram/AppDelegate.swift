@@ -17,17 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FirebaseApp.configure()
-        // Create an instance of UIStoryboard
-        let storyboard = UIStoryboard(name: "Login", bundle: .main)
-        // Instantiate initial view controller
-        if let initialViewController = storyboard.instantiateInitialViewController() {
-            // Set root view controller 
-            window?.rootViewController = initialViewController
-            // make it a key/ first windows. Doing this when there are multiple windows
-            // Example would be facebook calling feature when facebook running while calling is running in the background
-            window?.makeKeyAndVisible()
-        }
         
+        // Instantiate initial view controller
+        let initialViewController = UIStoryboard.initialViewController(for: .login)
+        
+        // Set root view controller
+        window?.rootViewController = initialViewController
+        // make it a key/ first windows. Doing this when there are multiple windows
+        // Example would be facebook calling feature when facebook running while calling is running in the background
+        window?.makeKeyAndVisible()
         return true
     }
 
