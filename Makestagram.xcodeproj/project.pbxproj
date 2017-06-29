@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B42F8371F045C9C0034036D /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */; };
 		5B5E89061EFCD7DA00D3DF77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */; };
 		5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D0BA51F04145A0098EA6A /* Constant.swift */; };
 		5B80195D1F0414A400DCD552 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */; };
+		5B80195F1F04221200DCD552 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80195E1F04221200DCD552 /* HomeViewController.swift */; };
+		5B8019611F04222F00DCD552 /* FindFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8019601F04222F00DCD552 /* FindFriendsViewController.swift */; };
+		5B8019631F044CF700DCD552 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B8019621F044CF700DCD552 /* MainTabBarController.swift */; };
 		5BA579101EFC42CE00A5E10C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5790F1EFC42CE00A5E10C /* Main.storyboard */; };
 		5BA5791E1EFC48FB00A5E10C /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BA5791D1EFC48FB00A5E10C /* Login.storyboard */; };
 		5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */; };
@@ -24,10 +28,14 @@
 /* Begin PBXFileReference section */
 		3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting /GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B5E89071EFCD7E300D3DF77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting /Info.plist"; sourceTree = "<group>"; };
 		5B7D0BA51F04145A0098EA6A /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = "Supporting /Constant.swift"; sourceTree = "<group>"; };
 		5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Storyboard+Utility.swift"; path = "Extensions/Storyboard+Utility.swift"; sourceTree = "<group>"; };
+		5B80195E1F04221200DCD552 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = Controllers/HomeViewController.swift; sourceTree = "<group>"; };
+		5B8019601F04222F00DCD552 /* FindFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FindFriendsViewController.swift; path = Controllers/FindFriendsViewController.swift; sourceTree = "<group>"; };
+		5B8019621F044CF700DCD552 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTabBarController.swift; path = Controllers/MainTabBarController.swift; sourceTree = "<group>"; };
 		5BA5790F1EFC42CE00A5E10C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Storyboards/Main.storyboard; sourceTree = "<group>"; };
 		5BA5791D1EFC48FB00A5E10C /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Login.storyboard; path = Storyboards/Login.storyboard; sourceTree = "<group>"; };
 		5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Controllers/LoginViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +60,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B42F8351F045C610034036D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
 		5B5E89041EFCD7C200D3DF77 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +100,9 @@
 			children = (
 				5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */,
 				5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */,
+				5B80195E1F04221200DCD552 /* HomeViewController.swift */,
+				5B8019601F04222F00DCD552 /* FindFriendsViewController.swift */,
+				5B8019621F044CF700DCD552 /* MainTabBarController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +131,7 @@
 				5BB552571EFC358800E9285E /* Assets.xcassets */,
 				5BB552501EFC358800E9285E /* AppDelegate.swift */,
 				5BF5FFDC1F0303FB005315D1 /* Service */,
+				5B42F8351F045C610034036D /* Helper */,
 				5BF5FFD51F02D41D005315D1 /* Model */,
 				5BA5791C1EFC45B800A5E10C /* View Controllers */,
 				5B5E89041EFCD7C200D3DF77 /* Supporting */,
@@ -189,6 +209,7 @@
 				TargetAttributes = {
 					5BB5524C1EFC358800E9285E = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = TALKAB4XDB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -280,8 +301,12 @@
 			files = (
 				5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */,
 				5BF5FFD71F02D432005315D1 /* User.swift in Sources */,
+				5B8019631F044CF700DCD552 /* MainTabBarController.swift in Sources */,
 				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
+				5B80195F1F04221200DCD552 /* HomeViewController.swift in Sources */,
+				5B42F8371F045C9C0034036D /* MGPhotoHelper.swift in Sources */,
 				5B80195D1F0414A400DCD552 /* Storyboard+Utility.swift in Sources */,
+				5B8019611F04222F00DCD552 /* FindFriendsViewController.swift in Sources */,
 				5BF5FFDE1F030429005315D1 /* UserService.swift in Sources */,
 				5BF5FFDB1F02F582005315D1 /* CreateUsernameViewController.swift in Sources */,
 				5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */,
@@ -391,6 +416,7 @@
 			baseConfigurationReference = 8466788FF28113EB76448496 /* Pods-Makestagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TALKAB4XDB;
 				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting /Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quangvu.Makestagram;
@@ -404,6 +430,7 @@
 			baseConfigurationReference = 38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = TALKAB4XDB;
 				INFOPLIST_FILE = "$(SRCROOT)/Makestagram/Supporting /Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.quangvu.Makestagram;

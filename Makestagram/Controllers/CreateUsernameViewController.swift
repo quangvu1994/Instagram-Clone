@@ -33,7 +33,7 @@ class CreateUsernameViewController: UIViewController {
                 return
             }
             
-            User.setCurrent(user)
+            User.setCurrent(user, writeToUserDefaults: true)
             // Grab our main storyboard
             let storyboard = UIStoryboard(name: "Main", bundle: .main)
             

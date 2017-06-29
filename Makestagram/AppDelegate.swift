@@ -18,14 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        // Instantiate initial view controller
-        let initialViewController = UIStoryboard.initialViewController(for: .login)
+        configureInitialRootViewController(for: window)
         
-        // Set root view controller
-        window?.rootViewController = initialViewController
-        // make it a key/ first windows. Doing this when there are multiple windows
-        // Example would be facebook calling feature when facebook running while calling is running in the background
-        window?.makeKeyAndVisible()
         return true
     }
 
@@ -50,7 +44,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+}
 
-
+extension AppDelegate {
+    func configureInitialRootViewController(for window: UIWindow?) {
+        // Create the standard user defaults
+        let defaults = UserDefaults.standard
+        let initialViewController: UIViewController
+        
+        // If current user is already exist read user's data from user default - Think it about like this
+        // - Firebase has their own User Default which store the current user status so the next time you open the app
+        // firebase can check if an user has already signed in
+        // - On our end, we set up our own User Default to hold our own User's data so we can instantiate our User
+        // the next time we open the app with the same state as before
+        
+        if Auth.auth().currentUser != nil,
+            // Grab the data from our User Default
+            let userData = defaults.object(forKey: Constants.UserDefaults.currentUser) as? Data,
+            // Decode it to the type user
+            let user = NSKeyedUnarchiver.unarchiveObject(with: userData) as? User {
+            
+            User.setCurrent(user)
+            
+            initialViewController = UIStoryboard.initialViewController(for: .main)
+        } else {
+            initialViewController = UIStoryboard.initialViewController(for: .login)
+        }
+        
+        window?.rootViewController = initialViewController
+        window?.makeKeyAndVisible()
+    }
 }
 
