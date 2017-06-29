@@ -46,6 +46,27 @@ struct UserService {
             
             completion(currUser)
         })
+    }
+    /**
+     Read post data from the Firebase Database
+     - parameter user: user who we want to grab the post from
+     - parameter completion: closure to handle the retrieved post
+    */
+    static func fetchPosts(for user: User, completion: @escaping ([Post]) -> Void) {
+        // relative reference path
+        let ref = Database.database().reference().child("posts").child(user.uid)
         
+        ref.observeSingleEvent(of: .value, with: { (snapshot) in
+            // Gather all posts and downcast it to an array of data snapshot
+            guard let snapshot = snapshot.children.allObjects as? [DataSnapshot] else {
+                return completion([])
+            }
+            
+            // Reverse the snapshot list
+            // Flat map will iterate through the list and convert each element using the given transformation
+            // which is our Post initialization.
+            let posts = snapshot.reversed().flatMap(Post.init)
+            completion(posts)
+        })
     }
 }

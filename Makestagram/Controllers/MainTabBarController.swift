@@ -18,7 +18,8 @@ class MainTabBarController: UITabBarController {
         
         // Define the callback to handle the image after we received it from MGPhotoHelper
         mgPhotoHelper.completionHandler = { image in
-            print("Handle image")
+            // Create post - write data to Firebase Storage and Firebase Database
+            PostService.create(for: image)
         }
         // Set our delegate to handle the changes made to our tab bar's items 
         // - our delegate needs to conform to UITabBarControllerDelegate
@@ -29,13 +30,16 @@ class MainTabBarController: UITabBarController {
 }
 
 extension MainTabBarController: UITabBarControllerDelegate {
+    // This method handle the event when user select a tab bar item
     func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        // We want to know which tab bar was selected
         if viewController.tabBarItem.tag == 1 {
-            // present photo taking action sheet
             mgPhotoHelper.presentActionSheet(from: self)
+            // Don't want to display the current view
             return false
-        } else {
-            return true
         }
+        
+        return true
+        
     }
 }
