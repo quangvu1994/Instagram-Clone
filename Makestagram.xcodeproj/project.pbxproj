@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0C90AA1F060044008311D9 /* PostHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0C90A91F060044008311D9 /* PostHeaderCell.swift */; };
+		5B2D40801F06388900C617CC /* PostActionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2D407F1F06388900C617CC /* PostActionCell.swift */; };
 		5B3744B51F055F4600FB469A /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3744B41F055F4600FB469A /* PostService.swift */; };
 		5B3744B71F05653F00FB469A /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3744B61F05653F00FB469A /* Post.swift */; };
 		5B3744B91F0569B500FB469A /* UIImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B3744B81F0569B500FB469A /* UIImage+Size.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		3250C0AF724E4FD7B168A5A7 /* Pods_Makestagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Makestagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A7390BE8727F28343035E6 /* Pods-Makestagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Makestagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Makestagram/Pods-Makestagram.release.xcconfig"; sourceTree = "<group>"; };
+		5B0C90A91F060044008311D9 /* PostHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostHeaderCell.swift; path = Views/PostHeaderCell.swift; sourceTree = "<group>"; };
+		5B2D407F1F06388900C617CC /* PostActionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostActionCell.swift; path = Views/PostActionCell.swift; sourceTree = "<group>"; };
 		5B3744B41F055F4600FB469A /* PostService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostService.swift; path = Services/PostService.swift; sourceTree = "<group>"; };
 		5B3744B61F05653F00FB469A /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Post.swift; path = Models/Post.swift; sourceTree = "<group>"; };
 		5B3744B81F0569B500FB469A /* UIImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIImage+Size.swift"; path = "Extensions/UIImage+Size.swift"; sourceTree = "<group>"; };
@@ -85,7 +89,9 @@
 		5B5E6DCA1F05A9D500F93CBA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5B2D407F1F06388900C617CC /* PostActionCell.swift */,
 				5B5E6DCB1F05A9EF00F93CBA /* PostImageCell.swift */,
+				5B0C90A91F060044008311D9 /* PostHeaderCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -334,6 +340,7 @@
 				5BF5FFD71F02D432005315D1 /* User.swift in Sources */,
 				5B8019631F044CF700DCD552 /* MainTabBarController.swift in Sources */,
 				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
+				5B2D40801F06388900C617CC /* PostActionCell.swift in Sources */,
 				5B3744B71F05653F00FB469A /* Post.swift in Sources */,
 				5B5E6DCC1F05A9EF00F93CBA /* PostImageCell.swift in Sources */,
 				5B3744B91F0569B500FB469A /* UIImage+Size.swift in Sources */,
@@ -345,6 +352,7 @@
 				5BF5FFDE1F030429005315D1 /* UserService.swift in Sources */,
 				5B3744B51F055F4600FB469A /* PostService.swift in Sources */,
 				5BF5FFDB1F02F582005315D1 /* CreateUsernameViewController.swift in Sources */,
+				5B0C90AA1F060044008311D9 /* PostHeaderCell.swift in Sources */,
 				5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
