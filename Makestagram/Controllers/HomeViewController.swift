@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class HomeViewController: UIViewController, UITableViewDataSource {
     
@@ -21,6 +22,7 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureTableView()
         // Fetch our posts from the database
         UserService.fetchPosts(for: User.current, completion: { (postList) in
             self.posts = postList
@@ -33,10 +35,22 @@ class HomeViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Post Image Cell", for: indexPath)
-        cell.backgroundColor = .red
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Post Image Cell", for: indexPath) as! PostImageCell
+        // Retrieve the post
+        let post = posts[indexPath.row]
+        // Instantiate URL object with the image's url
+        let imageURL = URL(string: post.imageURL)
+        // Using Kingfisher to set the image
+        cell.postImageView.kf.setImage(with: imageURL)
 
         return cell
+    }
+    
+    func configureTableView() {
+        // remove separators for empty cells
+        tableView.tableFooterView = UIView()
+        // remove separators from cells
+        tableView.separatorStyle = .none
     }
 }
 

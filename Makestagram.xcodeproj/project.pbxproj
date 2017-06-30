@@ -14,6 +14,7 @@
 		5B3744BD1F057A4900FB469A /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B3744BC1F057A4900FB469A /* Home.storyboard */; };
 		5B42F8371F045C9C0034036D /* MGPhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */; };
 		5B5738DE1F04A853003FBABB /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5738DD1F04A853003FBABB /* StorageService.swift */; };
+		5B5E6DCC1F05A9EF00F93CBA /* PostImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B5E6DCB1F05A9EF00F93CBA /* PostImageCell.swift */; };
 		5B5E89061EFCD7DA00D3DF77 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */; };
 		5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7D0BA51F04145A0098EA6A /* Constant.swift */; };
 		5B80195D1F0414A400DCD552 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B80195C1F0414A400DCD552 /* Storyboard+Utility.swift */; };
@@ -41,6 +42,7 @@
 		5B3744BC1F057A4900FB469A /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Home.storyboard; path = Storyboards/Home.storyboard; sourceTree = "<group>"; };
 		5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MGPhotoHelper.swift; path = Helpers/MGPhotoHelper.swift; sourceTree = "<group>"; };
 		5B5738DD1F04A853003FBABB /* StorageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StorageService.swift; path = Services/StorageService.swift; sourceTree = "<group>"; };
+		5B5E6DCB1F05A9EF00F93CBA /* PostImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PostImageCell.swift; path = Views/PostImageCell.swift; sourceTree = "<group>"; };
 		5B5E89051EFCD7DA00D3DF77 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Supporting /GoogleService-Info.plist"; sourceTree = "<group>"; };
 		5B5E89071EFCD7E300D3DF77 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Supporting /Info.plist"; sourceTree = "<group>"; };
 		5B7D0BA51F04145A0098EA6A /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constant.swift; path = "Supporting /Constant.swift"; sourceTree = "<group>"; };
@@ -78,6 +80,14 @@
 				5B42F8361F045C9C0034036D /* MGPhotoHelper.swift */,
 			);
 			name = Helper;
+			sourceTree = "<group>";
+		};
+		5B5E6DCA1F05A9D500F93CBA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5B5E6DCB1F05A9EF00F93CBA /* PostImageCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		5B5E89041EFCD7C200D3DF77 /* Supporting */ = {
@@ -145,6 +155,7 @@
 			children = (
 				5BB552571EFC358800E9285E /* Assets.xcassets */,
 				5BB552501EFC358800E9285E /* AppDelegate.swift */,
+				5B5E6DCA1F05A9D500F93CBA /* View */,
 				5BF5FFDC1F0303FB005315D1 /* Service */,
 				5B42F8351F045C610034036D /* Helper */,
 				5BF5FFD51F02D41D005315D1 /* Model */,
@@ -324,6 +335,7 @@
 				5B8019631F044CF700DCD552 /* MainTabBarController.swift in Sources */,
 				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
 				5B3744B71F05653F00FB469A /* Post.swift in Sources */,
+				5B5E6DCC1F05A9EF00F93CBA /* PostImageCell.swift in Sources */,
 				5B3744B91F0569B500FB469A /* UIImage+Size.swift in Sources */,
 				5B80195F1F04221200DCD552 /* HomeViewController.swift in Sources */,
 				5B42F8371F045C9C0034036D /* MGPhotoHelper.swift in Sources */,
