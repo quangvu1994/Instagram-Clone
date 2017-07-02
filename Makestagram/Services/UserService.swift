@@ -62,11 +62,32 @@ struct UserService {
                 return completion([])
             }
             
+            let dispatchGroup = DispatchGroup()
             // Reverse the snapshot list
             // Flat map will iterate through the list and convert each element using the given transformation
             // which is our Post initialization.
-            let posts = snapshot.reversed().flatMap(Post.init)
-            completion(posts)
+            let posts: [Post] =
+                snapshot.reversed().flatMap {
+                    // Loop through each snapshot and instantiate a new post object 
+                    guard let post = Post(snapshot: $0)
+                        else { return nil }
+                    
+                    // Halt the main thread -> check if the post is liked by current user
+                    dispatchGroup.enter()
+                    
+                    LikeService.isPostLiked(post) { (isLiked) in
+                        post.isLiked = isLiked
+                        
+                        dispatchGroup.leave()
+                    }
+                    
+                    return post
+                }
+            
+            // Notify the main queue to resume
+            dispatchGroup.notify(queue: .main, execute: {
+                completion(posts)
+            })
         })
     }
 }

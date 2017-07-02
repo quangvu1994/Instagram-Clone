@@ -28,6 +28,8 @@
 		5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BA5791F1EFC49E000A5E10C /* LoginViewController.swift */; };
 		5BB552511EFC358800E9285E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BB552501EFC358800E9285E /* AppDelegate.swift */; };
 		5BB552581EFC358800E9285E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB552571EFC358800E9285E /* Assets.xcassets */; };
+		5BE2B5981F06D07800701F7D /* LikeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2B5971F06D07800701F7D /* LikeService.swift */; };
+		5BE2B59A1F08C98800701F7D /* FollowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BE2B5991F08C98800701F7D /* FollowService.swift */; };
 		5BF5FFD71F02D432005315D1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFD61F02D432005315D1 /* User.swift */; };
 		5BF5FFDB1F02F582005315D1 /* CreateUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */; };
 		5BF5FFDE1F030429005315D1 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF5FFDD1F030429005315D1 /* UserService.swift */; };
@@ -60,6 +62,8 @@
 		5BB5524D1EFC358800E9285E /* Makestagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makestagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BB552501EFC358800E9285E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BB552571EFC358800E9285E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5BE2B5971F06D07800701F7D /* LikeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LikeService.swift; path = Services/LikeService.swift; sourceTree = "<group>"; };
+		5BE2B5991F08C98800701F7D /* FollowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FollowService.swift; path = Services/FollowService.swift; sourceTree = "<group>"; };
 		5BF5FFD61F02D432005315D1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Models/User.swift; sourceTree = "<group>"; };
 		5BF5FFDA1F02F582005315D1 /* CreateUsernameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateUsernameViewController.swift; path = Controllers/CreateUsernameViewController.swift; sourceTree = "<group>"; };
 		5BF5FFDD1F030429005315D1 /* UserService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserService.swift; path = Services/UserService.swift; sourceTree = "<group>"; };
@@ -188,6 +192,8 @@
 				5BF5FFDD1F030429005315D1 /* UserService.swift */,
 				5B5738DD1F04A853003FBABB /* StorageService.swift */,
 				5B3744B41F055F4600FB469A /* PostService.swift */,
+				5BE2B5971F06D07800701F7D /* LikeService.swift */,
+				5BE2B5991F08C98800701F7D /* FollowService.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -335,12 +341,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BE2B59A1F08C98800701F7D /* FollowService.swift in Sources */,
 				5B7D0BA61F04145A0098EA6A /* Constant.swift in Sources */,
 				5B5738DE1F04A853003FBABB /* StorageService.swift in Sources */,
 				5BF5FFD71F02D432005315D1 /* User.swift in Sources */,
 				5B8019631F044CF700DCD552 /* MainTabBarController.swift in Sources */,
 				5BA579201EFC49E000A5E10C /* LoginViewController.swift in Sources */,
 				5B2D40801F06388900C617CC /* PostActionCell.swift in Sources */,
+				5BE2B5981F06D07800701F7D /* LikeService.swift in Sources */,
 				5B3744B71F05653F00FB469A /* Post.swift in Sources */,
 				5B5E6DCC1F05A9EF00F93CBA /* PostImageCell.swift in Sources */,
 				5B3744B91F0569B500FB469A /* UIImage+Size.swift in Sources */,
