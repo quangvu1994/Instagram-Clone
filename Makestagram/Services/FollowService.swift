@@ -13,9 +13,9 @@ class FollowService: NSObject {
     
     static func setIsFollowing(_ isFollowing: Bool, fromCurrentUserTo followee: User, success: @escaping (Bool) -> Void) {
         if isFollowing {
-            followUser(followee, forCurrentUserWithSuccess: success)
+            followUser(followee, success: success)
         } else {
-            unfollowUser(followee, forCurrentUserWithSuccess: success)
+            unfollowUser(followee, success: success)
         }
     }
     
@@ -49,6 +49,22 @@ class FollowService: NSObject {
             
             success(true)
         }
+    }
+    
+    /**
+     Checking if an user is being followed by the current user
+    */
+    static func isFollow(_ user: User, success: @escaping (Bool) -> Void) {
+        let currentUID = User.current.uid
+        // Construct the path to our following node
+        let followingRef = Database.database().reference().child("followers/\(user.uid)/\(currentUID)")
+        followingRef.observeSingleEvent(of: .value, with: { (snapshot) in
+            if let _ = snapshot.value {
+                return success(true)
+            }else {
+                return success(false)
+            }
+        })
     }
     
 }
